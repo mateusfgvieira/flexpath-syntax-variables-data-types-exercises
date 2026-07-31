@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log('Hello, World!');
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +49,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 29;
+  const myName = "Mateus";
+  console.log(`My name is ${myName}, and I am ${myAge} years old.`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +78,16 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let sum = num1 + num2;
+  let subtract = num1 - num2;
+  let multiply = num1 * num2;
+  let divide = num1 / num2;
+
+  console.log(`For ${num1} and ${num2}...
+  Sum = ${sum}
+  Difference = ${subtract}
+  Product = ${multiply}
+  Quotient = ${divide}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +106,15 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x;
+  x = 54;
+  console.log(typeof(x));
+
+  x = '54';
+  console.log(typeof(x));
+
+  x = 54 =='54';
+  console.log(typeof(x));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +132,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+  isAvailable = !isAvailable;
+  console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +159,16 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let message = 'Way down Hadestown.';
+
+  let upper = message.toUpperCase();
+  console.log(upper);
+
+  let lower = message.toLowerCase();
+  console.log(lower);
+
+  let length = message.length;
+  console.log(length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +195,14 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name = 'Mateus';
+  let greeting;
+
+  greeting =`Hello, ${name}! Welcome to JavaScript!`;
+
+  console.log(greeting);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,8 +223,11 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let undefinedVariable;
+  console.log(undefinedVariable);
 
+  let nullVar = null;
+  console.log(nullVar);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -206,7 +246,13 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Odyssey',
+    author: 'Homer',
+    publishedYear: 2026
+  };
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -226,7 +272,14 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Odyssey',
+    author: 'Homer',
+    publishedYear: 2026
+  };
+
+  console.log(`The title is ${book.title}.`);
+  console.log(`The author is ${book['author']}.`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -248,7 +301,16 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Odyssey',
+    author: 'Homer',
+    publishedYear: 2026
+  };
+
+  book.publishedYear = 600;
+  book['genre'] = 'poetry';
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -267,7 +329,15 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Odyssey',
+    author: 'Homer',
+    publishedYear: 2026
+  };
+
+  delete book.author;
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -298,7 +368,11 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+
+  copy.name = 'Bob';
+
+  console.log(original.name);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -318,7 +392,9 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -340,7 +416,11 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  console.log(`
+    Year: ${currentDate.getFullYear()}
+    Month: ${currentDate.getMonth() + 1}
+    Day: ${currentDate.getDate()}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -365,7 +445,9 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let birthday = new Date(1997, 0, 20);
+
+  console.log(birthday.toDateString());
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -392,7 +474,10 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  let daysElapsed = Math.ceil((currentDate - pastDate) / (1000 * 60 * 60 * 24));
+
+  console.log(daysElapsed);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -423,7 +508,9 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log('With Plus Operator: ' + msgPart1 + ' ' + msgPart2 + '!');
+
+  console.log(`With Template Literal: ${msgPart1} ${msgPart2}!`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -456,7 +543,11 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes('JavaScript'));
+  console.log(text.includes('Python'));
+  console.log(text.includes('javascript'));
+
+  //the includes() method is case-sensitive, so it does not recognize lowercase 'javascript' within the original text
 
   // CODE IN THE OPEN LINES ABOVE
 }
